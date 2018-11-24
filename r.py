@@ -2,12 +2,10 @@
 #!/usr/bin/python3
 from selenium import webdriver
 import time
-import re
-#import importlib2
+import re 
 import pymysql
 import os
-import configparser
-#importlib2.reload(sys)
+import configparser 
 
 cur_path=os.path.dirname(os.path.realpath(__file__))
 config_path=os.path.join(cur_path,'config.ini')
