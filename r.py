@@ -11,9 +11,7 @@ cur_path=os.path.dirname(os.path.realpath(__file__))
 config_path=os.path.join(cur_path,'config.ini')
 conf=configparser.ConfigParser()
 conf.read(config_path)
-qqs=[{"qq":"2682373393","beizhu":"心协的墙","filen":"xinXieDeQiang"},{"qq":"1952356436","beizhu":"墙二","filen":"qiangtwo"},{"qq":"2790117931","beizhu":"墙三","filen":"qiangsan"}] #qq号，备注，要保存为的文件的名字（不含扩展名
-    
-
+qqs=[{"qq":"2682373393","beizhu":"心协的墙"},{"qq":"1952356436","beizhu":"墙二"},{"qq":"2790117931","beizhu":"墙三"}] 
 #从配置文件中获取数据信息
 d_name = conf.get('database','name')
 d_password = conf.get('database','password')
