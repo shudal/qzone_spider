@@ -16,3 +16,8 @@
 
 * config.ini中，account栏填写qq号和密码，database栏填写数据库名，用户名，密码/
 * 第十四行名 为qqs的列表中，填写需要爬取的qq的信息--qq号，备注。注意，必须要给要爬取信息的人备注，不然检测不到此人。格式参见源码中的
+
+### 其他
+
+* 推荐阅读，[meta标签的refferrer与防盗链](https://blog.lyz810.com/article/2016/08/referrer-policy-and-anti-leech/)
+* 有些qq直接使用账号密码登录不可以，还需要验证码啥啥的，就不能使用这个程序。
