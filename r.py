@@ -11,7 +11,8 @@ cur_path=os.path.dirname(os.path.realpath(__file__))
 config_path=os.path.join(cur_path,'config.ini')
 conf=configparser.ConfigParser()
 conf.read(config_path)
-qqs=[{"qq":"2682373393","beizhu":"心协的墙"},{"qq":"1952356436","beizhu":"墙二"},{"qq":"2790117931","beizhu":"墙三"}] 
+#qqs=[{"qq":"2682373393","beizhu":"心协的墙"},{"qq":"1952356436","beizhu":"墙二"},{"qq":"2790117931","beizhu":"墙三"}] 
+qqs=[{"qq":"1849045415","beizhu":"君"}]
 #从配置文件中获取数据信息
 d_name = conf.get('database','name')
 d_password = conf.get('database','password')
@@ -23,13 +24,14 @@ cursor = db.cursor()
 
 yiChongfu=0
 def startSpider(theqq):
-    driver = webdriver.Chrome()  #chromedriver和chrome.exe在同一文件夹下,即chromedriver在chrome的安装目录
+    driver = webdriver.Chrome()  #运行于windows时，chromedriver和chrome.exe在同一文件夹下,即chromedriver在chrome的安装目录
 	#windows上只需要上面这一行就够了，linux上使用下面的：
     '''
     option = webdriver.ChromeOptions()
     option.add_argument('--no-sandbox')
     option.add_argument('--headless')
-    driver = webdriver.Chrome(executable_path='/root/dowload/chromedriver',chrome_options=option) #这个是chormedriver的地址
+	src_chromedriver = conf.get('env','chromedriver')    #这个是chromedriver的地址
+    driver = webdriver.Chrome(executable_path=src_chromedriver,chrome_options=option) 
 	'''
     driver.get('https://qzone.qq.com/')
 

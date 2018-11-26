@@ -9,7 +9,7 @@
 ### 运行环境
 
 * 库依赖 ：selenium,pymysql,configparser
-* chrome游览器，并配置chromedriver （随便改改用其它游览区也可以啦），关于chromedrvier的身处何处的说明见源码28行左右
+* chrome游览器，并配置chromedriver （随便改改用其它游览区也可以啦），关于chromedrvier的身处何处的说明见源码28行左右。windows下将chromedriver与chrome.exe放置于同一目录，即chromedriver在chrome的安装目录。linux下需要填写config.ini中的env栏下chromedriver的地址，windows下不需要。
 * mysql服务器
 
 ### 使用说明
